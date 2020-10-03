@@ -1,403 +1,360 @@
 /*-----------------Global-------------*/
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 :root {
-    --main-black: #1E202B;
-    --main-blue: #08AEEA;
-    --main-green: #2AF598;
-    --main-gradient: linear-gradient(to right, var(--main-blue), var(--main-green));
+  --main-black: #1e202b;
+  --main-blue: #08aeea;
+  --main-green: #2af598;
+  --main-gradient: linear-gradient(
+    to right,
+    var(--main-blue),
+    var(--main-green)
+  );
 }
 
 html {
-    font-family: Source Sans Pro, sans-serif;
+  font-family: Source Sans Pro, sans-serif;
 }
 
 body {
-    width: 100%;
-    background-color: white;
+  width: 100%;
+  background-color: white;
 }
 
 h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--main-black);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--main-black);
 }
 
 h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--main-black);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--main-black);
 }
 
-p, li {
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--main-black);
+p,
+li {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--main-black);
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  width: 436px;
 }
 
 .btnWhite {
-    display: inline-block;
-    text-decoration: none;
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: white;
-    margin-bottom: 135px;
-    background: #2AF598;
-    background: -webkit-linear-gradient(top right, #2AF598, #08AFEA);
-    background: -moz-linear-gradient(top right, #2AF598, #08AFEA);
-    background: linear-gradient(to bottom left, #2AF598, #08AFEA);
-    -webkit-background-clip: text; 
-    
-    -webkit-text-fill-color: transparent; 
+  display: inline-block;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  margin-bottom: 135px;
+  background: #2af598;
+  background: -webkit-linear-gradient(top right, #2af598, #08afea);
+  background: -moz-linear-gradient(top right, #2af598, #08afea);
+  background: linear-gradient(to bottom left, #2af598, #08afea);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
 }
 
 .btnGroup {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .whiteBG {
-    background-color: white;
-    display: block;
-    height: 60px;
-    width: 200px;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    border-radius: 3px;
+  background-color: white;
+  display: block;
+  height: 60px;
+  width: 200px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  border-radius: 3px;
 }
 
 .btnColor {
-    display: inline-block;
-    text-decoration: none;
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    background-image: var(--main-gradient);
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    border-radius: 3px;
+  display: inline-block;
+  text-decoration: none;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-image: var(--main-gradient);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 3px;
 }
 
 .btnGreen {
-    color: var(--main-green);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 1px;
+  color: var(--main-green);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 span {
-    color: var(--main-green);
+  color: var(--main-green);
 }
-
 
 /*-----------------Header/nav-------------*/
 nav {
-    display: inline-block;
-    width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    line-height: 100px;
+  color: white;
+  text-decoration: none;
+  line-height: 100px;
 }
 
 .logo {
-    font-weight: 500;
-    font-size: 25px;
-    letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 2px;
 }
 
 nav ul {
-    float: right;
-    list-style: none;
+  float: right;
+  list-style: none;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-left: 50px;
+  display: inline-block;
+  margin-left: 50px;
 }
 
 header h1 {
-    color: white;
-    width: 55%;
-    margin: 90px 0 40px 0;
+  color: white;
+  width: 55%;
+  margin: 90px 0 40px 0;
 }
 
 header p {
-    color: white;
-    margin-bottom: 40px;
-    opacity: 0.9;
+  color: white;
+  margin-bottom: 40px;
+  opacity: 0.9;
 }
 
 header {
-    background-image: url(images/deadpoolheader.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    min-height: 900px;
-    width: 90%;
-    padding: 0 5%;
-    position: relative;
+  background-image: url(images/deadpoolheader.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 900px;
+  width: 90%;
+  padding: 0 5%;
+  position: relative;
 }
 
 .ipad {
-    width: 60%;
-    position: absolute;
-    right: 0;
-    bottom: 60px;
+  width: 60%;
+  position: absolute;
+  right: 0;
+  bottom: 60px;
 }
 
 .iphone {
-    width: 40%;
-    position: absolute;
-    right: 4%;
-    top: 150px;
-    display:none;
+  width: 40%;
+  position: absolute;
+  right: 4%;
+  top: 150px;
+  display: none;
 }
 
 .mobile {
-    display: none;
-
+  display: none;
 }
 label {
-    margin: 0 40px 0 0;
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 32px;
-    right: 0px;
-} 
- 
-#toggle {
-    display: none;
+  margin: 0 40px 0 0;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 0px;
 }
 
-.mobile ul{
-    text-align: center;
-    width:100%;
-    display: none;
-    margin: 0;
-    background-color: rgba(255,255,255,0.1);
+#toggle {
+  display: none;
+}
+
+.mobile ul {
+  text-align: center;
+  width: 100%;
+  display: none;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .mobile ul li {
-    margin: 0;
-    width: 100%;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-
 #toggle:checked ~ ul {
-    display: block;
-} 
-
+  display: block;
+}
 
 /*----------------------------new 4k movies---------------------------*/
 .new4KMovies {
-    width: 90%;
-    padding: 0 5%;
-    margin-bottom: 160px;
+  width: 90%;
+  padding: 0 5%;
+  margin-bottom: 160px;
 }
 
-.sectionTitle h2, .sectionTitle a {
-    display: inline-block;
-    vertical-align: middle;
+.sectionTitle h2,
+.sectionTitle a {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .sectionTitle a {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .sectionTitle {
-    margin: 50px 0 20px 0;
+  margin: 50px 0 20px 0;
 }
 
 .new4KMovies ul {
-    width: 100%;
-    display: flex;
-    list-style: none;   
+  width: 100%;
+  display: flex;
+  list-style: none;
 }
 .new4KMovies ul li img {
-    width: 92%;
-    margin: 4%;
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
--moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+  width: 92%;
+  margin: 4%;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.16);
 }
 
 .callToAction {
-    text-align: center;
-    width: 60%;
-    margin: 0 auto 200px auto;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto 200px auto;
 }
 
 .callToAction h1 {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-
-
 /*----------------------------footer---------------------------*/
-footer a { 
-    text-decoration: none;
-    color: var(--main-block);
+footer a {
+  text-decoration: none;
+  color: var(--main-block);
 }
 
 footer ul {
-    list-style: none;
-    float: right;
+  list-style: none;
+  float: right;
 }
 
 footer ul li {
-    display: inline-block;
-    margin-left: 50px;
+  display: inline-block;
+  margin-left: 50px;
 }
-.copy a, .copy p{
-    display: inline-block;
-    vertical-align: middle;
+.copy a,
+.copy p {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .copy p {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-footer { 
-    width: 90%;
-    padding: 0 5%;
-
+footer {
+  width: 90%;
+  padding: 0 5%;
 }
 
-footer ul, .copy {
-    line-height: 80px;
-    display: inline-block;
+footer ul,
+.copy {
+  line-height: 80px;
+  display: inline-block;
 }
-
-
-
 
 /*----------------------------responsive---------------------------*/
 
- 
 @media only screen and (max-width: 1200px) {
-    
-    header {
-        height: 100vh;
-        min-height: 1000px;
-    }
-    header h1 {
-        margin: 50px 0 40px 0;
-    }
-    .btnWhite {
-        margin-bottom: 80px;
-    }
-   .callToAction {
+  header {
+    height: 100vh;
+    min-height: 1000px;
+  }
+  header h1 {
+    margin: 50px 0 40px 0;
+  }
+  .btnWhite {
+    margin-bottom: 80px;
+  }
+  .callToAction {
     width: 90%;
-    }
-    .ipad {
-        display: none;
-    }
-    .iphone {
-        display: none;
-    }
+  }
+  .ipad {
+    display: none;
+  }
+  .iphone {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    
-    header h1 {
-        width: 100%;
-    }
-    header{
-        background-position: left center;
-    } 
-    .iphone {
-        display: none;
-    }
-    footer ul {
-        float: none;
-        display: block;
-        text-align: center;
-    }
-    .copy {
-        text-align:center;
-        display: block;
-    }
-    footer ul li {
-        margin: 0 25px;
-    }
+  header h1 {
+    width: 100%;
+  }
+  header {
+    background-position: left center;
+  }
+  .iphone {
+    display: none;
+  }
+  footer ul {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .copy {
+    text-align: center;
+    display: block;
+  }
+  footer ul li {
+    margin: 0 25px;
+  }
 }
-@media only screen and (max-width:700px) {
-    .new4KMovies ul {
-        flex-direction: column; 
-    }
-    .desktop {
-        display: none;
-    }
-    .mobile {
-        display: block;
-    }
-   nav ul li {
+@media only screen and (max-width: 700px) {
+  .new4KMovies ul {
+    flex-direction: column;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  nav ul li {
     margin: 0;
-   }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
